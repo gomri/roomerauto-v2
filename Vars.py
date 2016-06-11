@@ -17,7 +17,14 @@ TOP_100_PAGE = {
 }
 
 LIST = {	
-	'index_all_rooms_non_sd':'.component-card-inner.component-inner',
+	'index_all_rooms_non_sd':'.component-card-inner.component-innerdf',
 	'click_room_non_sd':'.component-content.component-card-content.component-post'
 }
 
+SCREEN_SHOT = {
+	'screen_shot_name':'{screen_shot_name}.png'
+}
+
+DRIVER = {
+	'wait':15
+}
