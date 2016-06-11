@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"find",
-				"find_element_by_css_selector"
+				"f",
+				"find_elements_by_css_selector"
 			],
 			[
 				"list",
-				"list_after_refresh"
+				"list_of_rooms"
+			],
+			[
+				"find",
+				"find_element_by_css_selector"
 			],
 			[
 				"secre",
@@ -115,7 +119,15 @@
 			"file": "Testing.py",
 			"settings":
 			{
-				"buffer_size": 511,
+				"buffer_size": 729,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Vars.py",
+			"settings":
+			{
+				"buffer_size": 543,
 				"line_ending": "Windows"
 			}
 		}
@@ -237,15 +249,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 511,
+						"buffer_size": 729,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								511,
-								511
+								575,
+								575
 							]
 						],
 						"settings":
@@ -253,10 +265,38 @@
 							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Vars.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 288.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -295,7 +335,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 200.0
+		"height": 331.0
 	},
 	"output.find_results":
 	{
@@ -348,7 +388,7 @@
 	"show_tabs": true,
 	"side_bar_visible": false,
 	"side_bar_width": 216.0,
-	"status_bar_visible": true,
+	"status_bar_visible": false,
 	"template_settings":
 	{
 	}
