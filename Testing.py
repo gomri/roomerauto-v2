@@ -19,11 +19,10 @@ driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
 
 driver.find_element_by_css_selector(HOME_PAGE['top_100']).click()
 driver.find_element_by_css_selector(TOP_100_PAGE['san-diego']).click()
-for i in range(20):
+for i in range(5):
 	try:
 		room_url = driver.find_elements_by_css_selector(LIST_PAGE['click_room_non_sd'])[i].get_attribute('href')
-		# driver.get(room_url)
-		print get_supplier_type(room_url,REGEX['find_suuplier_type'])
+		print get_supplier_type(room_url,REGEX['find_supplier_type'])
 	except Exception:
 		driver.refresh()
 # driver.quit()

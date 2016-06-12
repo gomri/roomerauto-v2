@@ -11,7 +11,7 @@ HOME_PAGE = {
 }
 
 REGEX = {
-	'find_suuplier_type':'(&t=)(\w)'
+	'find_supplier_type':'(&t=)(\w)'
 }
 
 TOP_100_PAGE = {
@@ -32,24 +32,75 @@ DRIVER_SETTINGS = {
 	'wait':15
 }
 
-TEST_RUN = {
-	'buy_roomer_p2p_NR_rate_1':False,
-	'buy_roomer_p2p_FC_rate_1':False,
-	'buy_roomer_p2p_LH_rate_1':False,
-	'buy_roomer_p2p_NR_rate_2':False,
-	'buy_roomer_p2p_FC_rate_2':False,
-	'buy_roomer_p2p_LH_rate_2':False,
-	'buy_roomer_smartp2p_NR':False,
-	'buy_roomer_smartp2p_LH':False,
-	'buy_roomer_expedia_NR':False,
-	'buy_roomer_expedia_FC':False,
-	'buy_roomer_expedia_LH':False,
-	'buy_roomer_torico_NR':False,
-	'buy_roomer_torico_FC':False,
-	'buy_roomer_torico_LH':False,
-	'buy_roomer_hotelbeds_NR':False,
-	'buy_roomer_hotelbeds_FC':False,
-	'buy_roomer_hotelbeds_LH':False,
+TEST_TO_RUN = {
+	'buy_roomer_p2p_NR_rate_1': {
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_p2p_FC_rate_1':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_p2p_LH_rate_1':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_p2p_NR_rate_2':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_p2p_FC_rate_2':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_p2p_LH_rate_2':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_smartp2p_NR':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_smartp2p_LH':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_expedia_NR':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_expedia_FC':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_expedia_LH':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_torico_NR':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_torico_FC':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_torico_LH':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_hotelbeds_NR':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_hotelbeds_FC':{
+		'tested': False,
+		'room_url': None
+	},
+	'buy_roomer_hotelbeds_LH':{
+		'tested': False,
+		'room_url': None
+	},
 	'buy_kayak_p2p_NR_rate_1':False,
 	'buy_kayak_p2p_FC_rate_1':False,
 	'buy_kayak_p2p_LH_rate_1':False,
