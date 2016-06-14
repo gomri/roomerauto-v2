@@ -32,17 +32,29 @@ TOP_100_PAGE = {
 
 LIST_PAGE = {	
 	'index_all_rooms_non_sd':'.component-card-inner.component-inner',
-	'click_room_non_sd':'.component-content.component-card-content.component-post'
+	'click_room_non_sd':'.component-content.component-card-content.component-post',
+	'unlock_secret_deal':{
+		'parent_element':'.secret_deal_banner.secret_deal_login.clearfix',
+		'select_input_field':'input[name="user[email]"]',
+		'data_to_fill':'bob.g@goog.com',
+		'click_unlock':'button'
+	}
 }
 
 ENTRY_PAGE = {
-	'book_button_FC':'.button.proceed_to_checkout',
-	'unlock_secret_deal':{
-		'click_to_input_email':'.button.secret_deal_unlock',
-		'fill_in_box':'user_email',
-		'data_to_fill':'bob.g@bob.g.com',
-		'click_unlock':'button'
-	}
+	'click_book':'.button.proceed_to_checkout',
+	'click_FC':{
+		'button':'.button.proceed_to_checkout'
+	},
+	'click_NR':'.clearfix.component_items.protection_items.non_refundable_items',
+	'click_LH':'.clearfix.component_items.protection_items.life_happens_items'
+	# ----------------------- not working ----------------------
+	# 'unlock_secret_deal':{ 
+	# 	'click_to_input_email':'.button.secret_deal_unlock',
+	# 	'fill_in_box':'user_email',
+	# 	'data_to_fill':'bob.g@bob.g.com',
+	# 	'click_unlock':'button'
+	# }
 }
 
 REVIEW_PAGE = {
@@ -96,120 +108,120 @@ DRIVER_SETTINGS = {
 	'wait':15
 }
 
-TEST_TO_RUN = {
-	'buy_roomer_p2p_NR_rate_1': {
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_p2p_FC_rate_1':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_p2p_LH_rate_1':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_p2p_NR_rate_2':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_p2p_FC_rate_2':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_p2p_LH_rate_2':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_smartp2p_NR':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_smartp2p_LH':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_expedia_NR':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_expedia_FC':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_expedia_LH':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_torico_NR':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_torico_FC':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_torico_LH':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_hotelbeds_NR':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_hotelbeds_FC':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_roomer_hotelbeds_LH':{
-		'tested': False,
-		'room_url': None
-	},
-	'buy_kayak_p2p_NR_rate_1':False,
-	'buy_kayak_p2p_FC_rate_1':False,
-	'buy_kayak_p2p_LH_rate_1':False,
-	'buy_kayak_p2p_NR_rate_2':False,
-	'buy_kayak_p2p_FC_rate_2':False,
-	'buy_kayak_p2p_LH_rate_2':False,
-	'buy_kayak_smartp2p_NR_rate_1':False,
-	'buy_kayak_smartp2p_LH_rate_1':False,
-	'buy_kayak_smartp2p_NR_rate_2':False,
-	'buy_kayak_smartp2p_LH_rate_2':False,
-	'buy_kayak_torico_NR_rate_1':False,
-	'buy_kayak_torico_FC_rate_1':False,
-	'buy_kayak_torico_LH_rate_1':False,
-	'buy_kayak_torico_NR_rate_2':False,
-	'buy_kayak_torico_FC_rate_2':False,
-	'buy_kayak_torico_LH_rate_2':False,
-	'buy_kayak_hotelbeds_NR_rate_1':False,
-	'buy_kayak_hotelbeds_FC_rate_1':False,
-	'buy_kayak_hotelbeds_LH_rate_1':False,
-	'buy_kayak_hotelbeds_NR_rate_2':False,
-	'buy_kayak_hotelbeds_FC_rate_2':False,
-	'buy_kayak_hotelbeds_LH_rate_2':False,
-	'buy_skyscanner_p2p_NR_rate_2':False,
-	'buy_skyscanner_p2p_FC_rate_2':False,
-	'buy_skyscanner_p2p_LH_rate_2':False,
-	'buy_skyscanner_smartp2p_NR_rate_2':False,
-	'buy_skyscanner_smartp2p_LH_rate_2':False,
-	'buy_skyscanner_torico_NR_rate_2':False,
-	'buy_skyscanner_torico_FC_rate_2':False,
-	'buy_skyscanner_torico_LH_rate_2':False,
-	'buy_skyscanner_hotelbeds_NR_rate_2':False,
-	'buy_skyscanner_hotelbeds_FC_rate_2':False,
-	'buy_skyscanner_hotelbeds_LH_rate_2':False,
-	'buy_skyscanner_expedia_NR_rate_2':False,
-	'buy_skyscanner_expedia_FC_rate_2':False,
-	'buy_skyscanner_expedia_LH_rate_2':False,
-	'buy_trivago_p2p_NR_rate_2':False,
-	'buy_trivago_p2p_FC_rate_2':False,
-	'buy_trivago_p2p_LH_rate_2':False,
-	'buy_trivago_smartp2p_NR_rate_2':False,
-	'buy_trivago_smartp2p_LH_rate_2':False,
-	'buy_trivago_torico_NR_rate_2':False,
-	'buy_trivago_torico_FC_rate_2':False,
-	'buy_trivago_torico_LH_rate_2':False,
-	'buy_trivago_hotelbeds_NR_rate_2':False,
-	'buy_trivago_hotelbeds_FC_rate_2':False,
-	'buy_trivago_hotelbeds_LH_rate_2':False
-}
+# TEST_TO_RUN = {
+# 	'buy_roomer_p2p_NR_rate_1': {
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_p2p_FC_rate_1':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_p2p_LH_rate_1':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_p2p_NR_rate_2':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_p2p_FC_rate_2':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_p2p_LH_rate_2':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_smartp2p_NR':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_smartp2p_LH':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_expedia_NR':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_expedia_FC':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_expedia_LH':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_torico_NR':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_torico_FC':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_torico_LH':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_hotelbeds_NR':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_hotelbeds_FC':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_roomer_hotelbeds_LH':{
+# 		'tested': False,
+# 		'room_url': None
+# 	},
+# 	'buy_kayak_p2p_NR_rate_1':False,
+# 	'buy_kayak_p2p_FC_rate_1':False,
+# 	'buy_kayak_p2p_LH_rate_1':False,
+# 	'buy_kayak_p2p_NR_rate_2':False,
+# 	'buy_kayak_p2p_FC_rate_2':False,
+# 	'buy_kayak_p2p_LH_rate_2':False,
+# 	'buy_kayak_smartp2p_NR_rate_1':False,
+# 	'buy_kayak_smartp2p_LH_rate_1':False,
+# 	'buy_kayak_smartp2p_NR_rate_2':False,
+# 	'buy_kayak_smartp2p_LH_rate_2':False,
+# 	'buy_kayak_torico_NR_rate_1':False,
+# 	'buy_kayak_torico_FC_rate_1':False,
+# 	'buy_kayak_torico_LH_rate_1':False,
+# 	'buy_kayak_torico_NR_rate_2':False,
+# 	'buy_kayak_torico_FC_rate_2':False,
+# 	'buy_kayak_torico_LH_rate_2':False,
+# 	'buy_kayak_hotelbeds_NR_rate_1':False,
+# 	'buy_kayak_hotelbeds_FC_rate_1':False,
+# 	'buy_kayak_hotelbeds_LH_rate_1':False,
+# 	'buy_kayak_hotelbeds_NR_rate_2':False,
+# 	'buy_kayak_hotelbeds_FC_rate_2':False,
+# 	'buy_kayak_hotelbeds_LH_rate_2':False,
+# 	'buy_skyscanner_p2p_NR_rate_2':False,
+# 	'buy_skyscanner_p2p_FC_rate_2':False,
+# 	'buy_skyscanner_p2p_LH_rate_2':False,
+# 	'buy_skyscanner_smartp2p_NR_rate_2':False,
+# 	'buy_skyscanner_smartp2p_LH_rate_2':False,
+# 	'buy_skyscanner_torico_NR_rate_2':False,
+# 	'buy_skyscanner_torico_FC_rate_2':False,
+# 	'buy_skyscanner_torico_LH_rate_2':False,
+# 	'buy_skyscanner_hotelbeds_NR_rate_2':False,
+# 	'buy_skyscanner_hotelbeds_FC_rate_2':False,
+# 	'buy_skyscanner_hotelbeds_LH_rate_2':False,
+# 	'buy_skyscanner_expedia_NR_rate_2':False,
+# 	'buy_skyscanner_expedia_FC_rate_2':False,
+# 	'buy_skyscanner_expedia_LH_rate_2':False,
+# 	'buy_trivago_p2p_NR_rate_2':False,
+# 	'buy_trivago_p2p_FC_rate_2':False,
+# 	'buy_trivago_p2p_LH_rate_2':False,
+# 	'buy_trivago_smartp2p_NR_rate_2':False,
+# 	'buy_trivago_smartp2p_LH_rate_2':False,
+# 	'buy_trivago_torico_NR_rate_2':False,
+# 	'buy_trivago_torico_FC_rate_2':False,
+# 	'buy_trivago_torico_LH_rate_2':False,
+# 	'buy_trivago_hotelbeds_NR_rate_2':False,
+# 	'buy_trivago_hotelbeds_FC_rate_2':False,
+# 	'buy_trivago_hotelbeds_LH_rate_2':False
+# }
