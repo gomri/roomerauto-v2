@@ -1,5 +1,11 @@
+from selenium.webdriver.common.keys import Keys
+
 URL = {
 	'base':'http://roomer-{env}.herokuapp.com' # env = testing enviorment
+}
+
+REGEX = {
+	'find_supplier_type':'(&t=)(\w)'
 }
 
 HOME_PAGE = {
@@ -10,10 +16,6 @@ HOME_PAGE = {
 	'discover_cities':'.three.columns.rmr-img-sprite.rmr-img-cities'
 }
 
-REGEX = {
-	'find_supplier_type':'(&t=)(\w)'
-}
-
 TOP_100_PAGE = {
 	'new_york':'a[href*="Las-Vegas"]',
 	'san-diego':'a[href*="San-Diego"]',
@@ -22,6 +24,53 @@ TOP_100_PAGE = {
 LIST_PAGE = {	
 	'index_all_rooms_non_sd':'.component-card-inner.component-inner',
 	'click_room_non_sd':'.component-content.component-card-content.component-post'
+}
+
+ENTRY_PAGE = {
+	'book_button_FC':'.button.proceed_to_checkout'
+}
+
+REVIEW_PAGE = {
+	'fill_in_full_name': {
+		'id_selector':'review-full-name',
+		'data_to_fill':'omri golan'
+	},
+	'fill_in_mobile': {
+		'id_selector':'mobile-number',
+		'data_to_fill':'7547541452'
+	},
+	'fill_in_email':{
+		'id_selector':'review-email',
+		'data_to_fill':'bob.g@goroomer.com'
+	},
+	'contiune':'Continue',
+	'fill_in_credit_card':{
+		'id_selector':'review-credit-card-number',
+		'data_to_fill':'4242424242424242'
+	},
+	'fill_in_credit_expire_date':{
+		'id_selector':'review-cc-exp-month',
+		'data_to_fill':Keys.PAGE_DOWN
+	},
+	'fill_in_credit_card_epire_year':{
+		'id_selector':'review-cc-exp-year',
+		'data_to_fill':Keys.PAGE_DOWN
+	},
+	'fill_in_credit_card_4last_digits':{
+		'id_selector':'review-cc-security-code',
+		'data_to_fill':'2179'
+	},
+	'fill_in_billing_address':{
+		'id_selector':'billing-address-input',
+		'data_to_fill':'Israel',
+		'click_arrow_down':Keys.ARROW_DOWN,
+		'click_enter':Keys.ENTER
+	},
+	'fill_in_zip_code':{
+		'id_selector':'review-zip',
+		'data_to_fill':'3187'
+	},
+	'complete_booking':'.complete-booking.weight-bold'
 }
 
 SCREEN_SHOT = {
