@@ -1,4 +1,9 @@
 from selenium.webdriver.common.keys import Keys
+from random import randint as random_num
+
+RANDOM = {
+	'rand_num': random_num(1,10)
+}
 
 URL = {
 	'base':'http://roomer-{env}.herokuapp.com' # env = testing enviorment
@@ -31,7 +36,13 @@ LIST_PAGE = {
 }
 
 ENTRY_PAGE = {
-	'book_button_FC':'.button.proceed_to_checkout'
+	'book_button_FC':'.button.proceed_to_checkout',
+	'unlock_secret_deal':{
+		'click_to_input_email':'.button.secret_deal_unlock',
+		'fill_in_box':'user_email',
+		'data_to_fill':'bob.g@bob.g.com',
+		'click_unlock':'button'
+	}
 }
 
 REVIEW_PAGE = {
