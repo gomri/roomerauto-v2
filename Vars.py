@@ -2,6 +2,10 @@ URL = {
 	'base':'http://roomer-{env}.herokuapp.com' # env = testing enviorment
 }
 
+API = {
+	'base':'http://roomer-api-{env}.herokuapp.com/api/reservations_by_hotels/{hotel_id}/{check_in}/{check_out}'
+}
+
 HOME_PAGE = {
 	'secret_deal':'.find_rooms.blue-btn',
 	'sell':'.sell',
