@@ -42,10 +42,8 @@ LIST_PAGE = {
 }
 
 ENTRY_PAGE = {
-	'click_book':'.button.proceed_to_checkout',
-	'click_FC':{
-		'button':'.button.proceed_to_checkout'
-	},
+	'click_book':'.standard-button.proceed_to_checkout',
+	'click_FC':'.button.proceed_to_checkout',
 	'click_NR':'.clearfix.component_items.protection_items.non_refundable_items',
 	'click_LH':'.clearfix.component_items.protection_items.life_happens_items'
 	# ----------------------- not working ----------------------
@@ -85,11 +83,11 @@ REVIEW_PAGE = {
 	},
 	'fill_in_credit_card_4last_digits':{
 		'id_selector':'review-cc-security-code',
-		'data_to_fill':'2179'
+		'data_to_fill':'789'
 	},
 	'fill_in_billing_address':{
 		'id_selector':'billing-address-input',
-		'data_to_fill':'Israel',
+		'data_to_fill':'Israel Post, Dizengoff Street, Tel Aviv-Yafo',
 		'click_arrow_down':Keys.ARROW_DOWN,
 		'click_enter':Keys.ENTER
 	},
@@ -100,15 +98,35 @@ REVIEW_PAGE = {
 	'complete_booking':'.complete-booking.weight-bold'
 }
 
+
+THANKYOU_PAGE = {
+	'thankyou_title':'.thank_you_title'
+}
+
 SCREEN_SHOT = {
 	'screen_shot_name':'{screen_shot_name}.png'
 }
 
 DRIVER_SETTINGS = {
-	'wait':15
+	'wait':20
 }
 
-# TEST_TO_RUN = {
+TEST_CASE_PARAMS = {
+	'source_roomer':'roomer',
+	'test cases':{
+		'roomer_sd_open_sd_buy_random':'roomer->secret deal->open secret deal->buy random'
+	}
+}
+
+TEST_TO_RUN = {
+	'roomer_buy_random_from_sd_with_sd_open':{
+		'source':'{source}',
+		'test_case':'{test_case}',
+		'find_supplier_type':'{find_supplier_type}',
+		'cancellation_policy':'{cancellation_policy}',
+		'testde':False
+	}
+}
 # 	'buy_roomer_p2p_NR_rate_1': {
 # 		'tested': False,
 # 		'room_url': None
