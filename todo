@@ -1,14 +1,12 @@
 must have
 13	improve error handling function
 12	create a reporter function
-4	add data to test dict (cancellation policy, supplier, meta)
 9	make requests to api as each meta and buy all the rooms that come up 
 7	handle reservation already bougth status
 6	buy random rooms from all lists 
 10	write regex to get meta redirect that's in url when makeing api request
 11	handle no rooms found status from api request 
 8	create dict for api request meaning token and email (maybe allow users to pot token in if you cant always get the most uptodate one)
-3	create function to check thankyou page shows up and add data about room bougth to dict (test = true, supplier, cancellation policy)
 7	create function to add data to test dict automatically
 5	create buy flow class (i think a class would be the right thing)  
 

@@ -5,8 +5,11 @@ from selenium import webdriver
 from Vars import RANDOM
 
 def unlock_SD(driver):
-	driver.find_element_by_css_selector(LIST_PAGE['unlock_secret_deal']['parent_element']).find_element_by_css_selector(LIST_PAGE['unlock_secret_deal']['select_input_field']).send_keys(LIST_PAGE['unlock_secret_deal']['data_to_fill'])
-	driver.find_element_by_name(LIST_PAGE['unlock_secret_deal']['click_unlock']).click()
+	try:
+		driver.find_element_by_css_selector(LIST_PAGE['unlock_secret_deal']['parent_element']).find_element_by_css_selector(LIST_PAGE['unlock_secret_deal']['select_input_field']).send_keys(LIST_PAGE['unlock_secret_deal']['data_to_fill'])
+		driver.find_element_by_name(LIST_PAGE['unlock_secret_deal']['click_unlock']).click()
+	except NoSuchElementException:
+		pass
 
 def click_random_room(driver,url=None):
 	try:

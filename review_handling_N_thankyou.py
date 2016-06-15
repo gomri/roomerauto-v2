@@ -12,7 +12,10 @@ def fill_in_review_page(driver,url=None):
 
 	# except NoSuchElementException:
 	#   	pass
-	driver.find_element_by_css_selector('.continue-button.standard-button.smaller.font-regular.weight-medium.push-bottom').click()
+	try:
+		driver.find_element_by_css_selector('.continue-button.standard-button.smaller.font-regular.weight-medium.push-bottom').click()
+	except NoSuchElementException:
+		pass
 	insert_review_full_name = driver.find_element_by_id(REVIEW_PAGE['fill_in_full_name']['id_selector']).send_keys(REVIEW_PAGE['fill_in_full_name']['data_to_fill'])
 	insert_review_mobile_number = driver.find_element_by_id(REVIEW_PAGE['fill_in_mobile']['id_selector']).send_keys(REVIEW_PAGE['fill_in_mobile']['data_to_fill'])
 	insert_review_email = driver.find_element_by_id(REVIEW_PAGE['fill_in_email']['id_selector']).send_keys(REVIEW_PAGE['fill_in_email']['data_to_fill'])
@@ -26,7 +29,6 @@ def fill_in_review_page(driver,url=None):
 	insert_billing_address_arrow_down = driver.find_element_by_id(REVIEW_PAGE['fill_in_billing_address']['id_selector']).send_keys(REVIEW_PAGE['fill_in_billing_address']['click_arrow_down'])
 	insert_billing_address_click_enter = driver.find_element_by_id(REVIEW_PAGE['fill_in_billing_address']['id_selector']).send_keys(REVIEW_PAGE['fill_in_billing_address']['click_enter'])
 	# insert_zip_code = driver.find_element_by_id(REVIEW_PAGE['fill_in_zip_code']['id_selector']).send_keys(REVIEW_PAGE['fill_in_zip_code']['data_to_fill'])
-	sleep(5)
 	click_book_button_review = driver.find_element_by_css_selector(REVIEW_PAGE['complete_booking']).click()
 
 def expect_thankyou_page(driver,url=None):

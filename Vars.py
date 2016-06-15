@@ -113,8 +113,11 @@ DRIVER_SETTINGS = {
 
 TEST_CASE_PARAMS = {
 	'source_roomer':'roomer',
-	'test cases':{
-		'roomer_sd_open_sd_buy_random':'roomer->secret deal->open secret deal->buy random'
+	'test_cases':{
+		'roomer_sd_open_sd_buy_random':'roomer->secret deal->open secret deal->buy random',
+		'roomer_top_100_open_sd_buy_random':'roomer->top 100->open secret deal->buy random',
+		'roomer_last_minute_deals_open_sd_buy_random':'roomer->last minute deals->open secret deal->buy random',
+		'roomer_discover_cities_open_sd_buy_random':'roomer->discover cities ->open secret deal->buy random'
 	}
 }
 
@@ -122,9 +125,30 @@ TEST_TO_RUN = {
 	'roomer_buy_random_from_sd_with_sd_open':{
 		'source':'{source}',
 		'test_case':'{test_case}',
-		'find_supplier_type':'{find_supplier_type}',
+		'supplier_type':'{supplier_type}',
 		'cancellation_policy':'{cancellation_policy}',
-		'testde':False
+		'tested':False
+	},
+	'roomer_top_100_open_sd_buy_random':{
+		'source':'{source}',
+		'test_case':'{test_case}',
+		'supplier_type':'{supplier_type}',
+		'cancellation_policy':'{cancellation_policy}',
+		'tested':False
+	},
+	'roomer_last_minute_deals_open_sd_buy_random':{
+		'source':'{source}',
+		'test_case':'{test_case}',
+		'supplier_type':'{supplier_type}',
+		'cancellation_policy':'{cancellation_policy}',
+		'tested':False
+	},
+	'roomer_discover_cities_open_sd_buy_random':{
+		'source':'{source}',
+		'test_case':'{test_case}',
+		'supplier_type':'{supplier_type}',
+		'cancellation_policy':'{cancellation_policy}',
+		'tested':False
 	}
 }
 # 	'buy_roomer_p2p_NR_rate_1': {
