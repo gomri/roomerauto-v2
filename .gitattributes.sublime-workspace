@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"cl",
+				"click"
+			],
+			[
+				"find",
+				"find_element_by_id"
+			],
+			[
+				"K",
+				"keys"
+			],
+			[
+				"check",
+				"check-in"
+			],
+			[
+				"ex",
+				"execute_script"
+			],
+			[
 				"ge",
 				"get_supplier_type"
 			],
@@ -22,10 +42,6 @@
 			[
 				"list",
 				"list_of_rooms"
-			],
-			[
-				"find",
-				"find_element_by_css_selector"
 			],
 			[
 				"secre",
@@ -104,10 +120,6 @@
 				"try	Try/Except"
 			],
 			[
-				"ex",
-				"except"
-			],
-			[
 				"find_e",
 				"find_element_by_css_selector"
 			],
@@ -127,6 +139,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Testing.py",
+			"settings":
+			{
+				"buffer_size": 4907,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "eric@kayak.com	cd7de248487ac667fe3a6f60235ed1d0\nashleigh.cruickshank@skyscanner.net  5ac8ffca9b0b36a14ac526ffb7a4753b\ntrivago-test@roomertravel.com	3db72ddafd7e149ec1edf659949ed6d0\n\n\n",
+			"settings":
+			{
+				"buffer_size": 183,
+				"line_ending": "Windows",
+				"name": "eric@kayak.com	cd7de248487ac667fe3a6f60235ed1d0"
+			}
+		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
@@ -171,16 +200,22 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/gomri/Desktop/roomerauto v2/.idea",
+		"/C/Users/gomri/Desktop/roomerauto v2",
 		"/C/Users/gomri/Desktop/roomerauto"
 	],
 	"file_history":
 	[
+		"/C/Users/gomri/Desktop/roomerauto v2/todo",
+		"/C/Users/gomri/Desktop/roomerauto v2/entry_handling.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/error_handling.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/Vars.py",
-		"/C/Users/gomri/Desktop/roomerauto v2/error_handleing.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/review_handling_N_thankyou.py",
+		"/C/Users/gomri/Desktop/hope this works.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/Testing.py",
-		"/C/Users/gomri/Desktop/roomerauto v2/gobal_functions.py",
 		"/C/Users/gomri/Desktop/roomerauto/test.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/API_requests.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/error_handleing.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/gobal_functions.py",
 		"/C/Users/gomri/Desktop/roomerauto/mail_server_tester.py",
 		"/C/Users/gomri/Downloads/prod.json",
 		"/C/Users/gomri/OneDrive/Documents/useful_querys.sql",
@@ -242,14 +277,64 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"file": "moment_failer.png",
-					"semi_transient": true,
+					"buffer": 0,
+					"file": "Testing.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								117
+							]
+						],
+						"settings":
+						{
+							"auto_name": "eric@kayak.com	cd7de248487ac667fe3a6f60235ed1d0",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
-					"type": "image"
+					"type": "text"
 				}
 			]
 		}
