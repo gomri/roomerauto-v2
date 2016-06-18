@@ -11,10 +11,46 @@ from list_handling import *
 from review_handling_N_thankyou import *
 from entry_handling import *
 
-# #------------------------------ test secret deal on roomer -----------------------
+#--------------------------------- SETUP DRIVER AND SETTINGS ---------------------
 
-# driver = webdriver.Firefox()
-# driver.implicitly_wait(DRIVER_SETTINGS['wait'])
+driver = webdriver.Firefox()
+driver.implicitly_wait(DRIVER_SETTINGS['wait'])
+driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
+
+#------------------------------- test search rooms on roomer ----------------------
+
+# driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['choose_destination']['selector']).send_keys(HOME_PAGE['search_rooms']['choose_destination']['data_to_fill'])
+# driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['choose_destination']['click_dropdown']).click()
+# sleep(2)
+# driver.find_element_by_name(HOME_PAGE['search_rooms']['choose_check_in']['selector']).click()
+# driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['choose_check_in']['check_in_date'].format(date=DATE['the_date_in_3_days'])).click()
+# driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['click_find_rooms']).click()
+
+# unlock_SD(driver)
+# click_random_room(driver)
+# driver.switch_to.window(driver.window_handles[-1])
+# try:
+# 	cancellation_policy,supplier_type = click_FC(driver)
+# except NoSuchElementException:
+# 	cancellation_policy,supplier_type = click_NR(driver)
+# sleep(5)
+# fill_in_review_page(driver)
+# tested = expect_thankyou_page(driver)
+
+# print_test_report(TEST_CASE_PARAMS['source_roomer'],
+# 					TEST_CASE_PARAMS['test_cases']['roomer_search_rooms_open_sd_buy_random'],
+# 					cancellation_policy,
+# 					supplier_type,
+# 					tested)
+
+# insert_data_to_dict(TEST_CASE_PARAMS['source_roomer'],
+# 					TEST_CASE_PARAMS['test_cases']['roomer_search_rooms_open_sd_buy_random'],
+# 					cancellation_policy,
+# 					supplier_type,
+# 					tested,
+# 					TEST_TO_RUN['roomer_search_rooms_open_sd_buy_random'])
+
+# #------------------------------ test secret deal on roomer -----------------------
 
 # driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
 
@@ -56,7 +92,7 @@ from entry_handling import *
 # click_random_room(driver)
 # driver.switch_to.window(driver.window_handles[-1])
 # try:
-# 	cancellation_policy,supplier_type = click_FC(driver)
+# 	cancellation_policy,supplier_type = click_LH(driver)
 # except NoSuchElementException:
 # 	cancellation_policy,supplier_type = click_NR(driver)
 # sleep(5)
@@ -116,7 +152,7 @@ from entry_handling import *
 # click_random_room(driver)
 # driver.switch_to.window(driver.window_handles[-1])
 # try:
-# 	cancellation_policy,supplier_type = click_FC(driver)
+# 	cancellation_policy,supplier_type = click_LH(driver)
 # except NoSuchElementException:
 # 	cancellation_policy,supplier_type = click_NR(driver)
 # sleep(5)

@@ -1,5 +1,11 @@
 from selenium.webdriver.common.keys import Keys
 from random import randint as random_num
+from datetime import datetime
+from global_functions import *
+
+DATE = {
+	'the_date_in_3_days':get_date()
+}
 
 RANDOM = {
 	'rand_num': random_num(1,10)
@@ -22,7 +28,19 @@ HOME_PAGE = {
 	'sell':'.sell',
 	'last_minute_deals':'last_minute_deals_link',
 	'top_100':'.event',
-	'discover_cities':'.three.columns.rmr-img-sprite.rmr-img-cities'
+	'discover_cities':'.three.columns.rmr-img-sprite.rmr-img-cities',
+	'search_rooms':{
+		'choose_destination':{
+			'selector':'.text.input.tt-query',
+			'data_to_fill':'london',
+			'click_dropdown':'.tt-suggestions .tt-suggestion'
+		},
+		'choose_check_in':{
+			'selector':'check-in',
+			'check_in_date':'td[data-day="{date}"]'
+		},
+		'click_find_rooms':'.find_rooms.blue-btn'
+	}
 }
 
 TOP_100_PAGE = {
@@ -114,10 +132,11 @@ DRIVER_SETTINGS = {
 TEST_CASE_PARAMS = {
 	'source_roomer':'roomer',
 	'test_cases':{
+		'roomer_search_rooms_open_sd_buy_random':'roomer->search rooms ->open secret deal->buy random',
 		'roomer_sd_open_sd_buy_random':'roomer->secret deal->open secret deal->buy random',
 		'roomer_top_100_open_sd_buy_random':'roomer->top 100->open secret deal->buy random',
 		'roomer_last_minute_deals_open_sd_buy_random':'roomer->last minute deals->open secret deal->buy random',
-		'roomer_discover_cities_open_sd_buy_random':'roomer->discover cities ->open secret deal->buy random'
+		'roomer_discover_cities_open_sd_buy_random':'roomer->discover cities ->open secret deal->buy random',
 	}
 }
 
@@ -144,6 +163,13 @@ TEST_TO_RUN = {
 		'tested':False
 	},
 	'roomer_discover_cities_open_sd_buy_random':{
+		'source':'{source}',
+		'test_case':'{test_case}',
+		'supplier_type':'{supplier_type}',
+		'cancellation_policy':'{cancellation_policy}',
+		'tested':False
+	},
+	'roomer_search_rooms_open_sd_buy_random':{
 		'source':'{source}',
 		'test_case':'{test_case}',
 		'supplier_type':'{supplier_type}',

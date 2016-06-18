@@ -1,5 +1,14 @@
 from Vars import *
 import re
+from datetime import datetime
+
+def get_date():
+	todays_date = str(datetime.today().day)
+	date_3_day_from_now = str(datetime.today().day + 3)
+	if date_3_day_from_now >= '28':
+		return todays_date
+	else:
+		return date_3_day_from_now
 
 def get_supplier_type(url, regex):
 	try:

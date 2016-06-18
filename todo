@@ -7,9 +7,7 @@ must have
 10	write regex to get meta redirect that's in url when makeing api request
 11	handle no rooms found status from api request 
 8	create dict for api request meaning token and email (maybe allow users to pot token in if you cant always get the most uptodate one)
-7	create function to add data to test dict automatically
-5	check pka (pick a day) calander online
-	get log from server (log_entry api, heroku api)
+5	get log from server (log_entry api, heroku api)
 
 
 would be nice	
