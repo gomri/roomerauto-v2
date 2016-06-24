@@ -126,7 +126,7 @@ SCREEN_SHOT = {
 }
 
 DRIVER_SETTINGS = {
-	'wait':20
+	'wait':15
 }
 
 TEST_CASE_PARAMS = {
