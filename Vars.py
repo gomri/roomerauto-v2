@@ -1,7 +1,8 @@
 from selenium.webdriver.common.keys import Keys
 from random import randint as random_num
-from datetime import datetime
+import datetime
 from global_functions import *
+
 
 DATE = {
 	'the_date_in_3_days':get_date()
@@ -11,16 +12,43 @@ RANDOM = {
 	'rand_num': random_num(1,10)
 }
 
-URL = {
-	'base':'http://roomer-{env}.herokuapp.com' # env = testing enviorment
+ROOMER = {
+	'url':'http://roomer-{env}.herokuapp.com' # env = testing enviorment
 }
 
 REGEX = {
-	'find_supplier_type':'(&t=)(\w)'
+	'find_supplier_type':'(&t=)(\w)',
+	'find_meta_redirect':'(\/meta_redirect.*)',
+	'find_source':'(utm_source=)(\w+)'
 }
 
+
 API = {
-	'base':'http://roomer-api-{env}.herokuapp.com/api/reservations_by_hotels/{hotel_id}/{check_in}/{check_out}'
+	'url':'http://roomer-api-{env}.herokuapp.com/api/reservations_by_hotels/{hotel_id}/{check_in}/{check_out}',
+	'hotel_id': get_hotel_id(),
+	'check_in': get_check_in(),
+	'check_out': get_check_out(),
+	'request_headers':{
+		'authorization':{
+			'key':'Authorization',
+			'value':'Token token={token}'
+		},
+		'partner':{
+			'key':'partner',
+			'value':'{email}'
+		},
+		'api-version':{
+			'key':'API-Version',
+			'value':'1'
+		},
+	},
+	'email-token_pars':{
+		'kayak':{
+			'token_one':'cd7de248487ac667fe3a6f60235ed1d0',
+			'token_two':None,
+			'email':'eric@kayak.com'
+		},
+	},
 }
 
 HOME_PAGE = {

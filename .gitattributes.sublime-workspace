@@ -4,6 +4,70 @@
 		"selected_items":
 		[
 			[
+				"ge",
+				"get_date"
+			],
+			[
+				"get",
+				"get_date"
+			],
+			[
+				"list",
+				"listToStringWithoutBrackets"
+			],
+			[
+				"che",
+				"check_out"
+			],
+			[
+				"chec",
+				"check_in"
+			],
+			[
+				"check",
+				"check_out"
+			],
+			[
+				"date",
+				"dateFormat"
+			],
+			[
+				"str",
+				"strftime"
+			],
+			[
+				"time",
+				"timeNow"
+			],
+			[
+				"f",
+				"formated_check_out"
+			],
+			[
+				"to",
+				"todays_date"
+			],
+			[
+				"fo",
+				"formated_check_in"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"headr",
+				"header1"
+			],
+			[
+				"her",
+				"heroku_api_url"
+			],
+			[
+				"hero",
+				"heroku_conn"
+			],
+			[
 				"cl",
 				"click"
 			],
@@ -16,32 +80,12 @@
 				"keys"
 			],
 			[
-				"check",
-				"check-in"
-			],
-			[
 				"ex",
 				"execute_script"
 			],
 			[
-				"ge",
-				"get_supplier_type"
-			],
-			[
-				"fo",
-				"format"
-			],
-			[
 				"Exp",
 				"exceptions"
-			],
-			[
-				"f",
-				"find_elements_by_css_selector"
-			],
-			[
-				"list",
-				"list_of_rooms"
 			],
 			[
 				"secre",
@@ -140,20 +184,36 @@
 	"buffers":
 	[
 		{
-			"file": "Testing.py",
+			"file": "/C/Users/gomri/Desktop/token-key",
 			"settings":
 			{
-				"buffer_size": 4907,
+				"buffer_size": 195,
+				"line_ending": "Windows",
+				"name": "eric@kayak.com	cd7de248487ac667fe3a6f60235ed1d0"
+			}
+		},
+		{
+			"file": "global_functions.py",
+			"settings":
+			{
+				"buffer_size": 1746,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "eric@kayak.com	cd7de248487ac667fe3a6f60235ed1d0\nashleigh.cruickshank@skyscanner.net  5ac8ffca9b0b36a14ac526ffb7a4753b\ntrivago-test@roomertravel.com	3db72ddafd7e149ec1edf659949ed6d0\n\n\n",
+			"file": "Vars.py",
 			"settings":
 			{
-				"buffer_size": 183,
-				"line_ending": "Windows",
-				"name": "eric@kayak.com	cd7de248487ac667fe3a6f60235ed1d0"
+				"buffer_size": 8172,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "API_requests.py",
+			"settings":
+			{
+				"buffer_size": 455,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -205,13 +265,13 @@
 	],
 	"file_history":
 	[
+		"/C/Users/gomri/Desktop/roomerauto v2/Testing.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/todo",
 		"/C/Users/gomri/Desktop/roomerauto v2/entry_handling.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/error_handling.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/Vars.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/review_handling_N_thankyou.py",
 		"/C/Users/gomri/Desktop/hope this works.py",
-		"/C/Users/gomri/Desktop/roomerauto v2/Testing.py",
 		"/C/Users/gomri/Desktop/roomerauto/test.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/API_requests.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/error_handleing.py",
@@ -254,6 +314,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"()",
 			"check_your_on_list",
 			"sys",
 			"		",
@@ -282,46 +343,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Testing.py",
+					"file": "/C/Users/gomri/Desktop/token-key",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4907,
+						"buffer_size": 195,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								484,
-								484
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 183,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								85,
-								117
+								195,
+								195
 							]
 						],
 						"settings":
@@ -333,7 +367,93 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "global_functions.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Vars.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "API_requests.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								357
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

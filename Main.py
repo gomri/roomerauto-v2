@@ -15,7 +15,7 @@ from entry_handling import *
 
 driver = webdriver.Firefox()
 driver.implicitly_wait(DRIVER_SETTINGS['wait'])
-driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
+driver.get(ROOMER['url'].format(env='qa-1')) # Setting the testing env
 
 #------------------------------- test search rooms on roomer ----------------------
 
@@ -52,7 +52,7 @@ driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
 
 # #------------------------------ test secret deal on roomer -----------------------
 
-# driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
+# driver.get(ROOMER['url'].format(env='qa-1')) # Setting the testing env
 
 # driver.find_element_by_css_selector(HOME_PAGE['secret_deal']).click()
 
@@ -83,7 +83,7 @@ driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
 
 # # ------------------------------ test top 100 on roomer -----------------------
 
-# driver.get(URL['base'].format(env='qa-1'))
+# driver.get(ROOMER['url'].format(env='qa-1'))
 
 # driver.find_element_by_css_selector(HOME_PAGE['top_100']).click()
 # driver.find_element_by_css_selector(TOP_100_PAGE['san-diego']).click()
@@ -114,7 +114,7 @@ driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
 
 # #--------------------------- last minute deals roomer open sd --------------------
 
-# driver.get(URL['base'].format(env='qa-1'))
+# driver.get(ROOMER['url'].format(env='qa-1'))
 
 # driver.find_element_by_id(HOME_PAGE['last_minute_deals']).click()
 
@@ -144,7 +144,7 @@ driver.get(URL['base'].format(env='qa-1')) # Setting the testing env
 
 # #------------------- discover cities to visit open sd ----------------------
 
-# driver.get(URL['base'].format(env='qa-1'))
+# driver.get(ROOMER['url'].format(env='qa-1'))
 
 # driver.find_element_by_css_selector(HOME_PAGE['discover_cities']).click()
 
