@@ -1,15 +1,18 @@
 import re
 import sys
+import time 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotVisibleException
 from Vars import *
 from error_handling import *
-from time import sleep
 from list_handling import *
 from review_handling_N_thankyou import *
 from entry_handling import *
+
+start_time = time.time()
+
 
 #--------------------------------- SETUP DRIVER AND SETTINGS ---------------------
 
@@ -17,7 +20,7 @@ driver = webdriver.Firefox()
 driver.implicitly_wait(DRIVER_SETTINGS['wait'])
 driver.get(ROOMER['url'].format(env='qa-1')) # Setting the testing env
 
-#------------------------------- test search rooms on roomer ----------------------
+# #------------------------------- test search rooms on roomer ----------------------
 
 # driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['choose_destination']['selector']).send_keys(HOME_PAGE['search_rooms']['choose_destination']['data_to_fill'])
 # driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['choose_destination']['click_dropdown']).click()
@@ -94,7 +97,7 @@ driver.get(ROOMER['url'].format(env='qa-1')) # Setting the testing env
 # try:
 # 	cancellation_policy,supplier_type = click_LH(driver)
 # except NoSuchElementException:
-# 	cancellation_policy,supplier_type = click_NR(driver)
+# 	cancellation_policy,supplier_type = click_FC(driver)
 # sleep(5)
 # fill_in_review_page(driver)
 # tested = expect_thankyou_page(driver)
@@ -154,7 +157,7 @@ driver.get(ROOMER['url'].format(env='qa-1')) # Setting the testing env
 # try:
 # 	cancellation_policy,supplier_type = click_LH(driver)
 # except NoSuchElementException:
-# 	cancellation_policy,supplier_type = click_NR(driver)
+# 	cancellation_policy,supplier_type = click_FC(driver)
 # sleep(5)
 # fill_in_review_page(driver)
 # tested = expect_thankyou_page(driver)
@@ -173,3 +176,5 @@ driver.get(ROOMER['url'].format(env='qa-1')) # Setting the testing env
 # 					TEST_TO_RUN['roomer_discover_cities_open_sd_buy_random'])
 
 # driver.quit()	
+
+# print("--- %s seconds ---" % (time.time() - start_time))

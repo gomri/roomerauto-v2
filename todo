@@ -13,3 +13,4 @@ would be nice
 	make flow readable
 	check if reservation is smart?
 	insert the erroe handler to each function in the buy flow
+	write reporter class (should be very easy)
