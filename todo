@@ -11,4 +11,4 @@ would be nice
 	create config file 
 	make flow readable
 	check if reservation is smart?
-	insert the erroe handler to each function in the buy flow
+	insert the error handler to each function in the buy flow
