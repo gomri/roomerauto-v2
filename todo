@@ -6,5 +6,5 @@ must have
 would be nice	
 	create config file 
 	check if reservation is smart?
-	insert the erroe handler to each function in the buy flow
+	insert the error handler to each function in the buy flow
 	write reporter class (should be very easy)

@@ -2,11 +2,11 @@ import requests
 import json
 import re 
 import time
+import sys
 from selenium.common.exceptions import NoSuchElementException
 from entry_handling import * 
 from review_handling_N_thankyou import *
 from list_handling import *
-from API_requests import *
 from Vars import *
 from global_functions import *
 from selenium import webdriver
@@ -41,7 +41,7 @@ class API_request(object):
             room_mate_redirect = _json_response_content[i]['reservation']['url']
             list_of_reservation_urls.append(get_redirect_url(REGEX['find_meta_redirect'], 
                                                                     room_mate_redirect, 
-                                                                    ROOMER['url'].format(env='qa-2')))
+                                                                    ROOMER['url'].format(env='qa-1')))
         return list_of_reservation_urls
 
 def buy_api_rooms(driver, header=None, url=None, partner_name=None, buy_from_list=True):
@@ -90,7 +90,6 @@ def buy_api_rooms(driver, header=None, url=None, partner_name=None, buy_from_lis
                                 tested,
                                 TEST_TO_RUN['from_partner_buy_all_api_request_reservations'])
 
-        driver.quit()
 
     else:
         print 'There was a problem with your request it returned', response_status

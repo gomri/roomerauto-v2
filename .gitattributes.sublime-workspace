@@ -208,26 +208,10 @@
 	"buffers":
 	[
 		{
-			"file": "todo",
+			"file": "Vars.py",
 			"settings":
 			{
-				"buffer_size": 550,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/gomri/Desktop/token-key",
-			"settings":
-			{
-				"buffer_size": 197,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Main.py",
-			"settings":
-			{
-				"buffer_size": 6038,
+				"buffer_size": 11596,
 				"line_ending": "Windows"
 			}
 		},
@@ -238,6 +222,14 @@
 				"buffer_size": 103,
 				"line_ending": "Windows",
 				"name": "things i have to do today"
+			}
+		},
+		{
+			"file": "todo",
+			"settings":
+			{
+				"buffer_size": 313,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -289,14 +281,14 @@
 	],
 	"file_history":
 	[
+		"/C/Users/gomri/Desktop/roomerauto v2/Main.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/todo",
 		"/C/Users/gomri/Desktop/token-key",
 		"/C/Users/gomri/Desktop/roomerauto v2/Vars.py",
-		"/C/Users/gomri/Desktop/roomerauto v2/Main.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/global_functions.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/API_requests.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/error_in_review.png",
 		"/C/Users/gomri/Desktop/roomerauto v2/Testing.py",
-		"/C/Users/gomri/Desktop/roomerauto v2/todo",
 		"/C/Users/gomri/Desktop/roomerauto v2/entry_handling.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/error_handling.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/review_handling_N_thankyou.py",
@@ -372,115 +364,40 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "todo",
+					"file": "Vars.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 550,
+						"buffer_size": 11596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								509,
-								509
+								1394,
+								1394
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/gomri/Desktop/token-key",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 197,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								181,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 1188.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Main.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6038,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								599,
-								600
-							],
-							[
-								1005,
-								1006
-							],
-							[
-								2226,
-								2227
-							],
-							[
-								3192,
-								3193
-							],
-							[
-								4206,
-								4207
-							],
-							[
-								5173,
-								5174
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4536.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
+					"buffer": 1,
 					"semi_transient": false,
 					"settings":
 					{
@@ -504,7 +421,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "todo",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

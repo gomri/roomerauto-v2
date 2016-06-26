@@ -21,15 +21,19 @@ class setup_for_tests(object):
 		driver.implicitly_wait(DRIVER_SETTINGS['wait'])
 		return driver
 
+	def clean_up(driver):
+		driver.quit()	
+
+
 # # -------------------------- test buy rooms from kayak
 
 
 # #------------------------------- test search rooms on roomer ----------------------
 def buy_roomer_choose_destination(driver):
-	driver.get(ROOMER['url'].format(env='qa-2'))
+	driver.get(ROOMER['url'].format(env='qa-1'))
 	driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['choose_destination']['selector']).send_keys(HOME_PAGE['search_rooms']['choose_destination']['data_to_fill'])
 	driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['choose_destination']['click_dropdown']).click()
-	sleep(2)
+	sleep(1)
 	driver.find_element_by_name(HOME_PAGE['search_rooms']['choose_check_in']['selector']).click()
 	driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['choose_check_in']['check_in_date'].format(date=DATE['the_date_in_3_days'])).click()
 	driver.find_element_by_css_selector(HOME_PAGE['search_rooms']['click_find_rooms']).click()
@@ -60,7 +64,7 @@ def buy_roomer_choose_destination(driver):
 
 # #------------------------------ test secret deal on roomer -----------------------
 def buy_roomer_secret_deal(driver):
-	driver.get(ROOMER['url'].format(env='qa-2')) # Setting the testing env
+	driver.get(ROOMER['url'].format(env='qa-1')) # Setting the testing env
 
 	driver.find_element_by_css_selector(HOME_PAGE['secret_deal']).click()
 
@@ -91,7 +95,7 @@ def buy_roomer_secret_deal(driver):
 
 # # ------------------------------ test top 100 on roomer -----------------------
 def buy_roomer_top_100(driver):
-	driver.get(ROOMER['url'].format(env='qa-2'))
+	driver.get(ROOMER['url'].format(env='qa-1'))
 
 	driver.find_element_by_css_selector(HOME_PAGE['top_100']).click()
 	driver.find_element_by_css_selector(TOP_100_PAGE['san-diego']).click()
@@ -122,7 +126,7 @@ def buy_roomer_top_100(driver):
 
 # #--------------------------- last minute deals roomer open sd --------------------
 def buy_roomer_last_minute_deals(driver):
-	driver.get(ROOMER['url'].format(env='qa-2'))
+	driver.get(ROOMER['url'].format(env='qa-1'))
 
 	driver.find_element_by_id(HOME_PAGE['last_minute_deals']).click()
 
@@ -152,7 +156,7 @@ def buy_roomer_last_minute_deals(driver):
 
 # #------------------- discover cities to visit open sd ----------------------
 def buy_roomer_discover_cities(driver):	
-	driver.get(ROOMER['url'].format(env='qa-2'))
+	driver.get(ROOMER['url'].format(env='qa-1'))
 
 	driver.find_element_by_css_selector(HOME_PAGE['discover_cities']).click()
 
@@ -180,5 +184,4 @@ def buy_roomer_discover_cities(driver):
 						tested,
 						TEST_TO_RUN['roomer_discover_cities_open_sd_buy_random'])
 
-	def clean_up(driver):
-		driver.quit()	
+	
