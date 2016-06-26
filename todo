@@ -1,7 +1,8 @@
 must have
 	13	improve error handling function
 	7	handle reservation already bougth status
-	11	handle no rooms found status from api request 
+		added to report price per night, rate plan
+		fix choose your destination test (something wrong with picking the rooms from the list)
 
 would be nice	
 	create config file 

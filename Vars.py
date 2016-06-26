@@ -171,19 +171,23 @@ REVIEW_PAGE = {
 	'contiune':'Continue',
 	'fill_in_credit_card':{
 		'id_selector':'review-credit-card-number',
-		'data_to_fill':'4242424242424242'
-	},
+		'data_to_fill_stripe':'4242424242424242',
+		'data_to_fill_adyen':'5555444433331111'
+	},					
 	'fill_in_credit_expire_date':{
 		'id_selector':'review-cc-exp-month',
-		'data_to_fill':Keys.PAGE_DOWN
+		'data_to_fill_stripe':Keys.PAGE_DOWN,
+		'data_to_fill_adyen':Keys.ARROW_DOWN*8
 	},
 	'fill_in_credit_card_epire_year':{
 		'id_selector':'review-cc-exp-year',
-		'data_to_fill':Keys.PAGE_DOWN
+		'data_to_fill_stripe':Keys.PAGE_DOWN,
+		'data_to_fill_adyen':Keys.ARROW_DOWN*3
 	},
 	'fill_in_credit_card_4last_digits':{
 		'id_selector':'review-cc-security-code',
-		'data_to_fill':'789'
+		'data_to_fill_stripe':'789',
+		'data_to_fill_adyen':'737'
 	},
 	'fill_in_billing_address':{
 		'id_selector':'billing-address-input',

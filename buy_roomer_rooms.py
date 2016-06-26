@@ -21,7 +21,7 @@ class setup_for_tests(object):
 		driver.implicitly_wait(DRIVER_SETTINGS['wait'])
 		return driver
 
-	def clean_up(driver):
+	def clean_up(self, driver):
 		driver.quit()	
 
 
