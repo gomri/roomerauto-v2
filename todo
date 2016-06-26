@@ -1,16 +1,11 @@
 must have
 	13	improve error handling function
-	9	make requests to api as each meta and buy all the rooms that come up 
 	7	handle reservation already bougth status
-	10	write regex to get meta redirect that's in url when makeing api request
 	11	handle no rooms found status from api request 
-	8	create dict for api request meaning token and email (maybe allow users to pot token in if you cant always get the most uptodate one)
 
 
 would be nice	
-	check that the report that is shown to user is readable
 	create config file 
-	make flow readable
 	check if reservation is smart?
 	insert the erroe handler to each function in the buy flow
 	write reporter class (should be very easy)

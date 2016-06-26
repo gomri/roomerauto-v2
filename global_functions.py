@@ -30,8 +30,8 @@ def get_check_out(dateFormat="%Y-%m-%d", addDays=3):
 
     return anotherTime.strftime(dateFormat)
 
-def get_hotel_id():
-	list1 = range(100)
+def get_hotel_id(list_range=100):
+	list1 = range(list_range)
 	list1 = str(list1).replace('[','').replace(']','')
 	return list1
 
@@ -46,7 +46,8 @@ def get_supplier_type(regex, url):
 		elif string_supplier_type == 'H':
 			return 'H'
 	except AttributeError:
-		return 'P2P'
+	 	return 'P2P'
+
 
 def get_source(regex, url):
 	reservation_source = re.search(regex, url).group(2)
@@ -63,7 +64,8 @@ def print_test_report(source,
 						test_case,
 						cancellation_policy,
 						supplier_type,
-						tested):
+						tested
+						):
 	print ''
 	print 'soure: ' + source
 	print 'test_case: ' + test_case
@@ -82,4 +84,6 @@ def insert_data_to_dict(source,
 	dict_to_add_data_to['supplier_type'].format(supplier_type=supplier_type)
 	dict_to_add_data_to['cancellation_policy'].format(cancellation_policy=cancellation_policy)
 	dict_to_add_data_to['tested'] = tested
+
+
 	
