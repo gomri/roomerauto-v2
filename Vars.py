@@ -3,13 +3,12 @@ from random import randint as random_num
 import datetime
 from global_functions import *
 
-
 DATE = {
 	'the_date_in_3_days':get_date()
 }
 
 RANDOM = {
-	'rand_num': random_num(1,10)
+	'rand_num': random_num(1,5)
 }
 
 ROOMER = {
@@ -22,6 +21,11 @@ REGEX = {
 	'find_source':'(utm_source=)(\w+)'
 }
 
+PARTNERS = {
+	'kayak':'kayak',
+	'skyscanner':'skyscanner',
+	'trivago':'trivago'
+}
 
 API = {
 	'url':'http://roomer-api-{env}.herokuapp.com/api/reservations_by_hotels/{hotel_id}/{check_in}/{check_out}',
@@ -48,8 +52,57 @@ API = {
 			'token_two':None,
 			'email':'eric@kayak.com'
 		},
+		'trivago':{
+			'token_one':'3db72ddafd7e149ec1edf659949ed6d0',
+			'token_two':None,
+			'email':'trivago-test@roomertravel.com'
+		},
+	'skyscanner':{
+			'token_one':'5ac8ffca9b0b36a14ac526ffb7a4753b',
+			'token_two':None,
+			'email':'ashleigh.cruickshank@skyscanner.net'
+		},
 	},
+	'max_reservation_to_buy':3
 }
+
+KAYAK_HEADER = {
+    API['request_headers']['authorization']['key']: API['request_headers']['authorization']['value'].format(
+                                                                    token=API['email-token_pars']['kayak']['token_one']
+                                                                    ),
+    API['request_headers']['partner']['key']: API['request_headers']['partner']['value'].format(
+                                                                    email=API['email-token_pars']['kayak']['email']
+                                                                    ),
+    API['request_headers']['api-version']['key']: API['request_headers']['api-version']['value']
+}
+
+SKYSCANNER_HEADER = {
+    API['request_headers']['authorization']['key']: API['request_headers']['authorization']['value'].format(
+                                                                    token=API['email-token_pars']['skyscanner']['token_one']
+                                                                    ),
+    API['request_headers']['partner']['key']: API['request_headers']['partner']['value'].format(
+                                                                    email=API['email-token_pars']['skyscanner']['email']
+                                                                    ),
+    API['request_headers']['api-version']['key']: API['request_headers']['api-version']['value']
+}
+
+TRIVAGO_HEADER = {
+    API['request_headers']['authorization']['key']: API['request_headers']['authorization']['value'].format(
+                                                                    token=API['email-token_pars']['trivago']['token_one']
+                                                                    ),
+    API['request_headers']['partner']['key']: API['request_headers']['partner']['value'].format(
+                                                                    email=API['email-token_pars']['trivago']['email']
+                                                                    ),
+    API['request_headers']['api-version']['key']: API['request_headers']['api-version']['value']
+}
+
+URL_FOR_API_REQUESTS = API['url'].format(
+		env='qa-2',
+		hotel_id=API['hotel_id'],
+		check_in=API['check_in'],
+		check_out=API['check_out']
+	)
+
 
 HOME_PAGE = {
 	'secret_deal':'.find_rooms.blue-btn',
@@ -71,6 +124,7 @@ HOME_PAGE = {
 	}
 }
 
+
 TOP_100_PAGE = {
 	'new_york':'a[href*="Las-Vegas"]',
 	'san-diego':'a[href*="San-Diego"]',
@@ -78,7 +132,7 @@ TOP_100_PAGE = {
 
 LIST_PAGE = {	
 	'index_all_rooms_non_sd':'.component-card-inner.component-inner',
-	'click_room_non_sd':'.component-content.component-card-content.component-post',
+	'click_room_non_sd':'a[href*="/hotels"]',
 	'unlock_secret_deal':{
 		'parent_element':'.secret_deal_banner.secret_deal_login.clearfix',
 		'select_input_field':'input[name="user[email]"]',
@@ -160,11 +214,12 @@ DRIVER_SETTINGS = {
 TEST_CASE_PARAMS = {
 	'source_roomer':'roomer',
 	'test_cases':{
-		'roomer_search_rooms_open_sd_buy_random':'roomer->search rooms ->open secret deal->buy random',
-		'roomer_sd_open_sd_buy_random':'roomer->secret deal->open secret deal->buy random',
-		'roomer_top_100_open_sd_buy_random':'roomer->top 100->open secret deal->buy random',
-		'roomer_last_minute_deals_open_sd_buy_random':'roomer->last minute deals->open secret deal->buy random',
-		'roomer_discover_cities_open_sd_buy_random':'roomer->discover cities ->open secret deal->buy random',
+		'roomer_search_rooms_open_sd_buy_random':'roomer ->search rooms ->open secret deal ->buy random',
+		'roomer_sd_open_sd_buy_random':'roomer ->secret deal ->open secret deal ->buy random',
+		'roomer_top_100_open_sd_buy_random':'roomer ->top 100 ->open secret deal ->buy random',
+		'roomer_last_minute_deals_open_sd_buy_random':'roomer ->last minute deals ->open secret deal ->buy random',
+		'roomer_discover_cities_open_sd_buy_random':'roomer ->discover cities ->open secret deal ->buy random',
+		'from_partner_buy_all_api_request_reservations':'{partner}(api) ->list ->buy all rooms returned from request'
 	}
 }
 
@@ -203,8 +258,17 @@ TEST_TO_RUN = {
 		'supplier_type':'{supplier_type}',
 		'cancellation_policy':'{cancellation_policy}',
 		'tested':False
-	}
+	},
+	'from_partner_buy_all_api_request_reservations':{
+		'source':'{source}',
+		'test_case':'{test_case}',
+		'supplier_type':'{supplier_type}',
+		'cancellation_policy':'{cancellation_policy}',
+		'tested':False
+	},
 }
+
+
 # 	'buy_roomer_p2p_NR_rate_1': {
 # 		'tested': False,
 # 		'room_url': None
