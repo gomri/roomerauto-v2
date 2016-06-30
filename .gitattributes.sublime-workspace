@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"K",
+				"Keys"
+			],
+			[
 				"re",
 				"return"
 			],
@@ -98,10 +102,6 @@
 			[
 				"find",
 				"find_element_by_id"
-			],
-			[
-				"K",
-				"keys"
 			],
 			[
 				"ex",
@@ -208,27 +208,22 @@
 	"buffers":
 	[
 		{
-			"file": "Vars.py",
+			"contents": "things i have to do today\n	read standalone doc 1h\n	write STP for standalone 2h\n	test emails 4h\n	\n",
 			"settings":
 			{
-				"buffer_size": 11596,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "things i have to do today\n	ready standalone doc 1h\n	write STP for standalone 2h\n	test buy fool email 5h",
-			"settings":
-			{
-				"buffer_size": 103,
+				"buffer_size": 97,
 				"line_ending": "Windows",
 				"name": "things i have to do today"
 			}
 		},
 		{
-			"file": "todo",
+			"contents": "eric@kayak.com	cd7de248487ac667fe3a6f60235ed1d0\nashleigh.cruickshank@skyscanner.net  5ac8ffca9b0b36a14ac526ffb7a4753b\ntrivago-test@roomertravel.com	3db72ddafd7e149ec1edf659949ed6d0\n\nomri@github22\n\nhttps://www.youtube.com/watch?v=qSI9M7BDFbM",
+			"file": "/C/Users/gomri/Desktop/token-key",
+			"file_size": 203,
+			"file_write_time": 131114202588940652,
 			"settings":
 			{
-				"buffer_size": 313,
+				"buffer_size": 240,
 				"line_ending": "Windows"
 			}
 		}
@@ -276,22 +271,25 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/gomri/Desktop/roomerauto v2",
-		"/C/Users/gomri/Desktop/roomerauto"
+		"/C/Users/gomri/Desktop/roomerauto v2"
 	],
 	"file_history":
 	[
-		"/C/Users/gomri/Desktop/roomerauto v2/Main.py",
-		"/C/Users/gomri/Desktop/roomerauto v2/todo",
-		"/C/Users/gomri/Desktop/token-key",
 		"/C/Users/gomri/Desktop/roomerauto v2/Vars.py",
+		"/C/Users/gomri/Desktop/token-key",
+		"/C/Users/gomri/Desktop/roomerauto v2/buy_roomer_rooms.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/app.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/list_handling.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/review_handling_N_thankyou.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/buy_api_rooms.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/todo",
+		"/C/Users/gomri/Desktop/roomerauto v2/entry_handling.py",
+		"/C/Users/gomri/Desktop/roomerauto v2/Main.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/global_functions.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/API_requests.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/error_in_review.png",
 		"/C/Users/gomri/Desktop/roomerauto v2/Testing.py",
-		"/C/Users/gomri/Desktop/roomerauto v2/entry_handling.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/error_handling.py",
-		"/C/Users/gomri/Desktop/roomerauto v2/review_handling_N_thankyou.py",
 		"/C/Users/gomri/Desktop/hope this works.py",
 		"/C/Users/gomri/Desktop/roomerauto/test.py",
 		"/C/Users/gomri/Desktop/roomerauto v2/error_handleing.py",
@@ -319,7 +317,7 @@
 	],
 	"find":
 	{
-		"height": 45.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -334,6 +332,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"url",
+			"get",
+			"driver",
+			"format",
+			"uk_stage",
+			"adyen",
+			"stripe",
+			"adyen",
+			"roomer",
+			"ROOMER",
 			"2",
 			"qa",
 			"base",
@@ -353,6 +361,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"stripe",
+			"adyen",
 			"(\"."
 		],
 		"reverse": false,
@@ -364,52 +374,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Vars.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11596,
+						"buffer_size": 97,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1394,
-								1394
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 1188.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 103,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								50,
-								50
+								96,
+								96
 							]
 						],
 						"settings":
@@ -425,20 +406,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "todo",
+					"buffer": 1,
+					"file": "/C/Users/gomri/Desktop/token-key",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 313,
+						"buffer_size": 240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								141,
-								141
+								240,
+								240
 							]
 						],
 						"settings":
@@ -449,7 +430,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -457,7 +438,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 45.0
+		"height": 36.0
 	},
 	"input":
 	{
@@ -498,7 +479,7 @@
 	"project": ".gitattributes.sublime-project",
 	"replace":
 	{
-		"height": 86.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -507,6 +488,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"re",
+				"review_handling_N_thankyou.py"
+			],
+			[
+				"ent",
+				"entry_handling.py"
+			],
+			[
+				"var",
+				"Vars.py"
+			],
 			[
 				"",
 				"C:\\Users\\gomri\\Desktop\\roomerauto\\autobuyingroom.py"
@@ -540,7 +533,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 216.0,
+	"side_bar_width": 233.0,
 	"status_bar_visible": false,
 	"template_settings":
 	{

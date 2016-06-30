@@ -93,4 +93,3 @@ def buy_api_rooms(driver, header=None, url=None, partner_name=None, buy_from_lis
 
     else:
         print 'There was a problem with your request it returned', response_status
-

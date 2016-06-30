@@ -13,7 +13,6 @@ from entry_handling import *
 
 
 
-
 #--------------------------------- SETUP DRIVER AND SETTINGS ---------------------
 class setup_for_tests(object):
 	def setup_driver(self):

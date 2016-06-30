@@ -14,10 +14,10 @@ def unlock_SD(driver):
 
 def click_random_room(driver,url=None):
 	try:
-		driver.find_element_by_css_selector(LIST_PAGE['click_room_non_sd']).click()
+		driver.find_elements_by_css_selector(LIST_PAGE['click_room_non_sd'])[RANDOM['rand_num']].click()
 	except NoSuchElementException:
 		driver.refresh()
-		driver.find_element_by_css_selector(LIST_PAGE['click_room_non_sd']).click()
+		driver.find_elements_by_css_selector(LIST_PAGE['click_room_non_sd'])[RANDOM['rand_num']].click()
 
 
 def click_highlighted(driver, url=None):

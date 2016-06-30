@@ -12,7 +12,8 @@ RANDOM = {
 }
 
 ROOMER = {
-	'url':'http://roomer-{env}.herokuapp.com' # env = testing enviorment
+	'url':'http://roomer-{env}.herokuapp.com', # env = testing enviorment
+	'uk_stage':'http://stage.roomertravel.co.uk'
 }
 
 REGEX = {
@@ -132,7 +133,7 @@ TOP_100_PAGE = {
 
 LIST_PAGE = {	
 	'index_all_rooms_non_sd':'.component-card-inner.component-inner',
-	'click_room_non_sd':'a[href*="/hotels"]',
+	'click_room_non_sd':'.component-button.component-card-button.component-post', #'a[href*="/hotels"]', if yout want to select the first room in list 
 	'unlock_secret_deal':{
 		'parent_element':'.secret_deal_banner.secret_deal_login.clearfix',
 		'select_input_field':'input[name="user[email]"]',
@@ -162,7 +163,7 @@ REVIEW_PAGE = {
 	},
 	'fill_in_mobile': {
 		'id_selector':'mobile-number',
-		'data_to_fill':'7547541452'
+		'data_to_fill':'546376337'
 	},
 	'fill_in_email':{
 		'id_selector':'review-email',
@@ -197,7 +198,7 @@ REVIEW_PAGE = {
 	},
 	'fill_in_zip_code':{
 		'id_selector':'review-zip',
-		'data_to_fill':'3187'
+		'data_to_fill':'10017'
 	},
 	'complete_booking':'.complete-booking.weight-bold'
 }
@@ -219,7 +220,7 @@ TEST_CASE_PARAMS = {
 	'source_roomer':'roomer',
 	'test_cases':{
 		'roomer_search_rooms_open_sd_buy_random':'roomer ->search rooms ->open secret deal ->buy random',
-		'roomer_sd_open_sd_buy_random':'roomer ->secret deal ->open secret deal ->buy random',
+		'roomer_sd_open_sd_buy_random':'roomer ->amazing deals ->open secret deal ->buy random',
 		'roomer_top_100_open_sd_buy_random':'roomer ->top 100 ->open secret deal ->buy random',
 		'roomer_last_minute_deals_open_sd_buy_random':'roomer ->last minute deals ->open secret deal ->buy random',
 		'roomer_discover_cities_open_sd_buy_random':'roomer ->discover cities ->open secret deal ->buy random',
