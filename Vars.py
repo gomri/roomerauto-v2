@@ -19,7 +19,8 @@ ROOMER = {
 REGEX = {
 	'find_supplier_type':'(&t=)(\w)',
 	'find_meta_redirect':'(\/meta_redirect.*)',
-	'find_source':'(utm_source=)(\w+)'
+	'find_source':'(utm_source=)(\w+)',
+	'find_rate_plan':'(plan_id=)(\d)'
 }
 
 PARTNERS = {
@@ -159,7 +160,7 @@ ENTRY_PAGE = {
 REVIEW_PAGE = {
 	'fill_in_full_name': {
 		'id_selector':'review-full-name',
-		'data_to_fill':'omri golan'
+		'data_to_fill':'jak jjj'
 	},
 	'fill_in_mobile': {
 		'id_selector':'mobile-number',
@@ -167,7 +168,7 @@ REVIEW_PAGE = {
 	},
 	'fill_in_email':{
 		'id_selector':'review-email',
-		'data_to_fill':'bob.g@goroomer.com'
+		'data_to_fill':'xox.g@goroomer.com'
 	},
 	'contiune':'Continue',
 	'fill_in_credit_card':{
@@ -178,7 +179,7 @@ REVIEW_PAGE = {
 	'fill_in_credit_expire_date':{
 		'id_selector':'review-cc-exp-month',
 		'data_to_fill_stripe':Keys.PAGE_DOWN,
-		'data_to_fill_adyen':Keys.ARROW_DOWN*8
+		'data_to_fill_adyen':Keys.ARROW_DOWN*8 	
 	},
 	'fill_in_credit_card_epire_year':{
 		'id_selector':'review-cc-exp-year',
@@ -220,7 +221,7 @@ TEST_CASE_PARAMS = {
 	'source_roomer':'roomer',
 	'test_cases':{
 		'roomer_search_rooms_open_sd_buy_random':'roomer ->search rooms ->open secret deal ->buy random',
-		'roomer_sd_open_sd_buy_random':'roomer ->amazing deals ->open secret deal ->buy random',
+		'roomer_ad_open_sd_buy_random':'roomer ->amazing deals ->open secret deal ->buy random',
 		'roomer_top_100_open_sd_buy_random':'roomer ->top 100 ->open secret deal ->buy random',
 		'roomer_last_minute_deals_open_sd_buy_random':'roomer ->last minute deals ->open secret deal ->buy random',
 		'roomer_discover_cities_open_sd_buy_random':'roomer ->discover cities ->open secret deal ->buy random',
@@ -229,17 +230,20 @@ TEST_CASE_PARAMS = {
 }
 
 TEST_TO_RUN = {
-	'roomer_buy_random_from_sd_with_sd_open':{
+	'roomer_ad_open_sd_buy_random':{
 		'source':'{source}',
 		'test_case':'{test_case}',
 		'supplier_type':'{supplier_type}',
+		'rate_plan':'{rate_plan}',
 		'cancellation_policy':'{cancellation_policy}',
 		'tested':False
 	},
+	
 	'roomer_top_100_open_sd_buy_random':{
 		'source':'{source}',
 		'test_case':'{test_case}',
 		'supplier_type':'{supplier_type}',
+		'rate_plan':'{rate_plan}',
 		'cancellation_policy':'{cancellation_policy}',
 		'tested':False
 	},
@@ -247,6 +251,7 @@ TEST_TO_RUN = {
 		'source':'{source}',
 		'test_case':'{test_case}',
 		'supplier_type':'{supplier_type}',
+		'rate_plan':'{rate_plan}',
 		'cancellation_policy':'{cancellation_policy}',
 		'tested':False
 	},
@@ -254,6 +259,7 @@ TEST_TO_RUN = {
 		'source':'{source}',
 		'test_case':'{test_case}',
 		'supplier_type':'{supplier_type}',
+		'rate_plan':'{rate_plan}',
 		'cancellation_policy':'{cancellation_policy}',
 		'tested':False
 	},
@@ -261,6 +267,7 @@ TEST_TO_RUN = {
 		'source':'{source}',
 		'test_case':'{test_case}',
 		'supplier_type':'{supplier_type}',
+		'rate_plan':'{rate_plan}',
 		'cancellation_policy':'{cancellation_policy}',
 		'tested':False
 	},
@@ -268,6 +275,7 @@ TEST_TO_RUN = {
 		'source':'{source}',
 		'test_case':'{test_case}',
 		'supplier_type':'{supplier_type}',
+		'rate_plan':'{rate_plan}',
 		'cancellation_policy':'{cancellation_policy}',
 		'tested':False
 	},

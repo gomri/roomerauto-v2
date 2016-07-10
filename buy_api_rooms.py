@@ -64,11 +64,13 @@ def buy_api_rooms(driver, header=None, url=None, partner_name=None, buy_from_lis
                     continue
             elif buy_from_list == False:
                 pass
-            source = get_source(REGEX['find_source'], driver.current_url)
+            url_current_page = driver.current_url
+            source = get_source(REGEX['find_source'], url_current_page)
+            rate_plan = get_rate_plan(REGEX['find_rate_plan'], url_current_page)
             try:
-                cancellation_policy,supplier_type = click_FC(driver)
+                cancellation_policy, supplier_type, rate_plan = click_FC(driver)
             except NoSuchElementException:
-                cancellation_policy,supplier_type = click_NR(driver)
+                cancellation_policy, supplier_type, rate_plan = click_NR(driver)
             sleep(5)
             fill_in_review_page(driver)
             sleep(5)
@@ -80,6 +82,7 @@ def buy_api_rooms(driver, header=None, url=None, partner_name=None, buy_from_lis
                                                                                                                 format(partner=partner_name),
                                 cancellation_policy,
                                 supplier_type,
+                                rate_plan,
                                 tested)
 
             insert_data_to_dict(source,
@@ -87,6 +90,7 @@ def buy_api_rooms(driver, header=None, url=None, partner_name=None, buy_from_lis
                                                                                                                 format(partner=partner_name),
                                 cancellation_policy,
                                 supplier_type,
+                                rate_plan,
                                 tested,
                                 TEST_TO_RUN['from_partner_buy_all_api_request_reservations'])
 

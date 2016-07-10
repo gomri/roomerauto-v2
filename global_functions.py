@@ -54,16 +54,21 @@ def get_source(regex, url):
 	return reservation_source
 
 
-def get_redirect_url(regex, url ,roomer_url):
+def get_redirect_url(regex, url, roomer_url):
 	meta_redirect = re.search(regex, url).group(1)
 	resevation_url = roomer_url + meta_redirect 
 	return resevation_url	
+
+def get_rate_plan(regex, url):
+	reservation_rate_plan = re.search(regex, url).group(2)
+	return reservation_rate_plan
 
 
 def print_test_report(source,
 						test_case,
 						cancellation_policy,
 						supplier_type,
+						rate_plan,
 						tested
 						):
 	print ''
@@ -71,17 +76,20 @@ def print_test_report(source,
 	print 'test_case: ' + test_case
 	print 'cancellation_policy: ' + cancellation_policy
 	print 'supplier_type: ' + supplier_type
+	print 'rate_plan: ' + str(rate_plan)
 	print 'tested: ' + str(tested)
 
 def insert_data_to_dict(source,
 						test_case,
 						cancellation_policy,
 						supplier_type,
+						rate_plan,
 						tested,
 						dict_to_add_data_to):
 	dict_to_add_data_to['source'].format(source=source)
 	dict_to_add_data_to['test_case'].format(test_case=test_case)
 	dict_to_add_data_to['supplier_type'].format(supplier_type=supplier_type)
+	dict_to_add_data_to['rate_plan'].format(rate_plan=rate_plan)
 	dict_to_add_data_to['cancellation_policy'].format(cancellation_policy=cancellation_policy)
 	dict_to_add_data_to['tested'] = tested
 

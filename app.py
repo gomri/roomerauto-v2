@@ -9,14 +9,14 @@ if __name__ == '__main__':
 		DRIVER = setup.setup_driver()
 
 		# buy_roomer_choose_destination(DRIVER) # under constraction
-		buy_roomer_secret_deal(DRIVER)
-		buy_roomer_top_100(DRIVER)
-		buy_roomer_last_minute_deals(DRIVER)
-		buy_roomer_discover_cities(DRIVER)
+		# buy_roomer_amazing_deal(DRIVER)
+		# buy_roomer_top_100(DRIVER)
+		# buy_roomer_last_minute_deals(DRIVER)
+		# buy_roomer_discover_cities(DRIVER)
 
 		buy_api_rooms(DRIVER ,KAYAK_HEADER ,URL_FOR_API_REQUESTS ,PARTNERS['kayak'])
-		buy_api_rooms(DRIVER ,SKYSCANNER_HEADER ,URL_FOR_API_REQUESTS ,PARTNERS['skyscanner'])
-		buy_api_rooms(DRIVER ,TRIVAGO_HEADER ,URL_FOR_API_REQUESTS ,PARTNERS['trivago'], buy_from_list=False)
+		# buy_api_rooms(DRIVER ,SKYSCANNER_HEADER ,URL_FOR_API_REQUESTS ,PARTNERS['skyscanner'])
+		# buy_api_rooms(DRIVER ,TRIVAGO_HEADER ,URL_FOR_API_REQUESTS ,PARTNERS['trivago'], buy_from_list=False)
 		setup.clean_up(DRIVER)
 		print("--- %s seconds ---" % (time.time() - start_time))
 
